@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -21,7 +22,7 @@ spec:
     spec:
       containers:
         - name: go
-          image: sanderknape/go-hello-world:<VERSION>
+          image: /delacroa1/go:latest
           ports:
             - containerPort: 8080
           livenessProbe:
